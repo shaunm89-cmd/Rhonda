@@ -14,8 +14,8 @@
             --cream-paper: #FDFDFB;       /* Warm White for boxes */
             --white: #ffffff;
             
-            /* YOUR BACKGROUND FILE */
-            --bg-image: url('background.png'); 
+            /* BACKGROUND IMAGE (Linked from GitHub) */
+            --bg-image: url('https://raw.githubusercontent.com/shaunm89-cmd/Rhonda/refs/heads/main/background.png'); 
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -39,7 +39,7 @@
 
         /* --- LAYOUT --- */
         .container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
             padding: 0 25px;
         }
@@ -48,13 +48,13 @@
         section {
             background: var(--cream-paper);
             padding: 80px 0;
-            margin: 60px 0; /* Gaps to see the background */
+            margin: 60px 0;
             box-shadow: 0 5px 25px rgba(0,0,0,0.05);
             border-top: 1px solid rgba(0,0,0,0.05);
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
 
-        /* Hero is transparent to show the wallpaper */
+        /* Hero is transparent */
         .hero-section {
             background: transparent;
             margin: 0;
@@ -85,7 +85,7 @@
             position: relative;
         }
 
-        /* Gold underline for headers */
+        /* Gold underline */
         h2::after {
             content: '';
             display: block;
@@ -117,15 +117,11 @@
 
         /* --- HEADER --- */
         header {
-            /* Crisp white with slight transparency */
             background: rgba(255, 255, 255, 0.95); 
-            
             position: sticky;
             top: 0;
             z-index: 1000;
             box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-            
-            /* Gold border to make it feel premium */
             border-bottom: 2px solid var(--gold-accent); 
         }
 
@@ -136,7 +132,6 @@
             height: 90px;
         }
 
-        /* Logo Stacking */
         .logo {
             display: flex;
             flex-direction: column;
@@ -275,7 +270,7 @@
             font-size: 1.1rem;
         }
 
-        /* --- FOOTER (Tidied Up 2-Column Layout) --- */
+        /* --- FOOTER (Tidied 2-Column Layout) --- */
         footer {
             background: rgba(27, 46, 27, 0.95);
             backdrop-filter: blur(5px);
@@ -294,25 +289,24 @@
         }
         footer h2::after { display: none; } 
         
-        /* New tidied footer grid: 2 columns, centered, restricted width */
         .footer-grid {
             display: grid;
             grid-template-columns: 1fr 1fr; /* Photo | Info */
             gap: 60px;
             align-items: center;
-            max-width: 800px; /* Prevents it from stretching too wide */
+            max-width: 800px; /* Prevents stretching */
             margin: 0 auto;
         }
 
         /* Footer Photo Styling */
         .footer-photo img {
             width: 100%;
-            max-width: 280px; /* Slightly smaller for balance */
+            max-width: 280px; 
             height: auto;
             border-radius: 4px;
             border: 2px solid var(--gold-accent);
             display: block;
-            margin: 0 auto; /* Centers photo in its column */
+            margin: 0 auto;
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
@@ -389,7 +383,7 @@
                 </div>
 
                 <div class="hero-image-container">
-                    <img src="https://static.wixstatic.com/media/8d1054_ee7df96c9df8426c91fea3979c1ba28a~mv2.jpeg/v1/fill/w_371,h_335,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Rhonda.jpeg" alt="Rhonda Blackadder" class="hero-photo">
+                    <img src="https://raw.githubusercontent.com/shaunm89-cmd/Rhonda/refs/heads/main/rhonda1.png" alt="Rhonda Blackadder" class="hero-photo">
                     <p class="credentials">
                         BAEng&Psy, BPsySt(Hons), DipProPrac<br>
                         Registered Psychologist (AHPRA)
@@ -509,7 +503,7 @@
             <div class="footer-grid">
                 
                 <div class="footer-photo">
-                    <img src="https://raw.githubusercontent.com/shaunm89-cmd/moshniki/7880593cbb073c03a19481b7d3c46c2ea5d23f3e/rhonda2.png" alt="Rhonda Blackadder">
+                    <img src="https://raw.githubusercontent.com/shaunm89-cmd/Rhonda/refs/heads/main/rhonda2.png" alt="Rhonda Blackadder">
                 </div>
 
                 <div class="footer-info">
